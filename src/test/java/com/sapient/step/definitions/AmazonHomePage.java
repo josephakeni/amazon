@@ -9,10 +9,10 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class AmazonHomePage extends WebdriverManager {
+	private String browser="chrome";
+	private String url="https://www.amazon.co.uk/";
 	
-	String url="https://www.amazon.co.uk/";
-	
-	WebDriver driver=getWebDriver();
+	WebDriver driver=getWebDriver(browser);
 	HomePage hp=new HomePage(driver);
 	
 	

@@ -7,8 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebdriverManager {
 	public static WebDriver driver;
 
-	public static WebDriver getWebDriver() {
-		String browser = "chrome";
+	public static WebDriver getWebDriver(String browser) {
 		if (driver == null) {
 
 			synchronized (WebdriverManager.class) {

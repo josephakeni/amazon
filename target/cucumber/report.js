@@ -59,49 +59,49 @@ formatter.match({
   "location": "AmazonHomePage.i_am_on_the_home_page()"
 });
 formatter.result({
-  "duration": 10713864140,
+  "duration": 11898671221,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePage.i_Click_on_Full_Shop_Directory()"
 });
 formatter.result({
-  "duration": 1636558824,
+  "duration": 3415498969,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePage.read_Number_of_links_and_print()"
 });
 formatter.result({
-  "duration": 101521728,
+  "duration": 190741959,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePage.click_on_Tools_and_Equipment()"
 });
 formatter.result({
-  "duration": 3972587279,
+  "duration": 6626168339,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePage.select_First_Product_Store_the_price()"
 });
 formatter.result({
-  "duration": 6227224288,
+  "duration": 11086012633,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePage.add_to_Basket()"
 });
 formatter.result({
-  "duration": 1589431825,
+  "duration": 1429688214,
   "status": "passed"
 });
 formatter.match({
   "location": "AmazonHomePage.go_to_View_my_basket_and_Validate_the_price()"
 });
 formatter.result({
-  "duration": 2465675171,
+  "duration": 2125557848,
   "status": "passed"
 });
 });
