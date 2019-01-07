@@ -1,0 +1,5 @@
+com\sapient\page\objects\HomePage.class
+com\sapient\step\definitions\AmazonHomePage.class
+com\sapient\commonUtils.class
+com\sapient\WebdriverManager.class
+com\sapient\step\definitions\RunnerTest.class

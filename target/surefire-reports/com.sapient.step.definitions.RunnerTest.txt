@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sapient.step.definitions.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.854 sec - in com.sapient.step.definitions.RunnerTest
