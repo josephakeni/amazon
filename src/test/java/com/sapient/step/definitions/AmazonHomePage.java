@@ -7,7 +7,6 @@ import com.sapient.page.objects.HomePage;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import junit.framework.Assert;
 
 public class AmazonHomePage extends WebdriverManager {
 	private String browser = "chrome";
@@ -43,15 +42,14 @@ public class AmazonHomePage extends WebdriverManager {
 	}
 
 	@Then("^Add to Basket$")
-	public void add_to_Basket() throws Throwable {
-		hp.getPrice();
+	public void add_to_Basket() {
 		hp.addToCart();
 	}
 
 	@Then("^Go to View my basket and Validate the price$")
-	public void go_to_View_my_basket_and_Validate_the_price() throws Throwable {
+	public void go_to_View_my_basket_and_Validate_the_price() {
 		hp.clickViewBasket();
-	    Assert.assertEquals(hp.cartTotal(), hp.getPrice());
+		hp.validatePrice();
 		driver.close();
 	}
 

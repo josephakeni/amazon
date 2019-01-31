@@ -56,13 +56,10 @@ public class HomePage {
 		selectTheFirstProduct.click();
 	}
 
-	@FindBy(how = How.ID, using = "priceblock_ourprice")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"priceblock_ourprice\"]")
 	public WebElement price;
 
-	public String getPrice() {
-		System.out.println(price.getText());
-		return price.getText();
-	}
+
 
 	public void addProductToBasket() {
 		selectTheFirstProduct.click();
@@ -78,7 +75,7 @@ public class HomePage {
 		addToCartButton.click();
 	}
 
-	@FindBy(how = How.XPATH, using = "//a[@id=\"nav-cart\"]")
+	@FindBy(how = How.ID, using = "nav-cart")
 	public WebElement viewCart;
 
 	public void clickViewBasket() {
@@ -89,8 +86,10 @@ public class HomePage {
 	public WebElement viewCartTotal;
 
 	public String cartTotal() {
-		System.out.println(viewCartTotal.getText());
-		return viewCartTotal.getText();
+		return viewCartTotal.toString();
 	}
 
+	public void validatePrice() {
+		price.toString().equals(cartTotal());
+	}
 }
